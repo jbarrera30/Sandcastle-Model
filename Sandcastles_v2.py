@@ -158,7 +158,8 @@ def waves(parameters):
         speeds.append(speed)
         
         rcn = waveHit([speed,height], rc)
-        showCastle(rc, "rectangular")
+        showCastle(rc, "rectangular")  # I suggest deleting this line if you simulate bigger shapes or lots of iterations
+                                       # it's only here for visualisation purposes but rendering takes a while
         print("The volume of the sandcastle at time "+ str(t) + "= " +str(volume(rc)))
         
     plot(hits, [heights,speeds], ["Height of wave (in cm)","Speed of wave"])

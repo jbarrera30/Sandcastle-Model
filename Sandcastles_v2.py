@@ -182,7 +182,7 @@ def waveHit(wave,castle):
                     linForce -= 2   #simplistic now
                 j+=1
     
-    '''simplistic collapsic (for now)'''
+    '''simplistic collapse (for now)'''
     for h in range(1,len(castle)):  
         layer = castle[h]
         for i in range(0,len(layer)):

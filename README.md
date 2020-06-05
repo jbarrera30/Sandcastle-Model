@@ -8,3 +8,6 @@ Tonight, I'm gonna spend some time studying water waves and try to model them in
 
 (31 May):
 I uploaded the 'master' file called "Sandcastles_v2", which contains the code for creating and visualizing the castles, creating the waves, and hitting the castle with each wave. The methods that need refinement are: the collapsing of the castle after each wave hit (tetris-like so far), the force function for each wave, and more realistic wave parameters.
+
+(4 June):
+I uploaded some new changes (in "Sandcastles_v4") which include comments to explain what each method does and how the code "flows". The code is ready to include the tides and the force function as we discussed in yesterday's meeting. I'll probably include these in the next few days and upload the updated version.

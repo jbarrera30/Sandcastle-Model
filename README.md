@@ -1,13 +1,7 @@
-# Math42Project
+# Sandcastle Modeling
 
-So far I've only uploaded the radioactive decay file from my last year simulation course. I took an object oriented approach so it might be slightly confusing to read through at first, but I believe it's gonna be really useful for us to keep this approach, since we'll have to run the same simulation for various types of sandcastles (thus the object oriented approach)
+In an effort to conclude which three-dimensional shapes last the longest as a sandcastle base, we visualize myriad shapes on a three-dimensional grid. We break down each shape into smaller three-dimensional cells, each with a wetness parameter. Within each cell, its wetness parameter increases as it is subjected to more contact with waves. We conclude that a base is “destroyed” when 50 percent of its volume has been eroded.
 
-Tonight, I'm gonna spend some time studying water waves and try to model them in a code file. So far, I believe I'll use 3 parameters as random variables under normal distributions. They will be: frequency of waves (how often one comes), height of waves and speed of waves.
+In our model, we select five shapes as candidates for a base: rectangular prism, cylinder, rhombus, ellipsoid, and pyramid. We run two simulations - one in which the shapes are only subjected to waves (with the tides), while the other simulation includes the addition of rainfall. By simulating the wave velocities and heights at each time step, factoring the impact of the tides on change in wave velocity, we apply wetness damage to each of the cells accordingly. In the waves-only simulation, the ellipsoid comes out as the optimal shape, taking the longest amount of time to reach 50 percent destruction by volume. 
 
-(btw note: I accidentally came upon python's 3D plotting options, and I found some really cool ways to visualise our 3D geometric shapes. I spent some time on it and I created cubic and pyramidal castles so far; I even imagine that I could create animations of the castles breaking over time (if we have spare time towards the end) to make pretty visualisations)
-
-(31 May):
-I uploaded the 'master' file called "Sandcastles_v2", which contains the code for creating and visualizing the castles, creating the waves, and hitting the castle with each wave. The methods that need refinement are: the collapsing of the castle after each wave hit (tetris-like so far), the force function for each wave, and more realistic wave parameters.
-
-(4 June):
-I uploaded some new changes (in "Sandcastles_v4") which include comments to explain what each method does and how the code "flows". The code is ready to include the tides and the force function as we discussed in yesterday's meeting. I'll probably include these in the next few days and upload the updated version.
+After conducting some research on the time scales and physics of raindrops, we were also able to implement a rain simulation where raindrops hit each cell on the top layer of a base at a consistent interval. Again, the ellipsoid-shaped base endured the longest amount of time, before succumbing to the erosion forces of the rainfall and waves. 
